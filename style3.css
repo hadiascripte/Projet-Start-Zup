@@ -92,7 +92,10 @@ h1 {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.404);
 }
-
+.propos{
+    display: flex;
+    justify-content: center;
+}
 .txtpropos {
     display: flex;
     justify-content: center;
@@ -100,7 +103,8 @@ h1 {
     background-image: url(/Ressources/capricorn-.jpg);
     background-size: cover;
     background-position: center;
-    margin: 10%;
+    margin:100px 0;
+    width: 80%;
     border-radius: 50px;
     box-shadow: 20px -20px 1px rgb(191, 175, 143);
     position: relative;
@@ -191,7 +195,7 @@ footer {
         margin: 0 auto;
     }
     .logo img {
-        width: 18vw;
+        width: 15vw;
         height: auto;
     }
     .liensnav {
