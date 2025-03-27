@@ -94,13 +94,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    width: 90vw;
+    margin: 1vw;
 }
+
 .liensnav a {
     text-decoration: none;
     font-family: walter-turncoat;
-    letter-spacing: 2px;
     margin: 10px;
     font-size: 1.2rem;
     padding: 1vw 2vw;
@@ -109,7 +108,7 @@ header {
 .liensnav a:hover {
     color: var(--var4);
     border-bottom: solid var(--var4);
-    letter-spacing: 4px;
+    letter-spacing: 1px;
 }
 /* main */
 /* titre background image */
@@ -265,16 +264,15 @@ form {
 }
 label {
     font-family: schoolbell;
-   
     letter-spacing: 2px;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 1vw 0;
     padding: 0 4vw;
 }
 input {
     width: 80%;
-    height: 7vh;
+    height: 6vh;
     margin-bottom: 2vw;
     text-align: center;
     border-radius: 20px;
@@ -288,6 +286,8 @@ textarea {
 .btn input {
     background-color: var(--var5);
     font-family: pangolin;
+    color: var(--var2);
+    font-size: 1.2rem;
     width: 200px;
     transition: 0.3s;
 }
@@ -345,7 +345,13 @@ footer {
     margin: 5px 0;
     font-family: pangolin;
 }
-
+#btnwhatsapp{
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    width:70px;
+    z-index: 1;
+}
 @media screen and (max-width: 850px) {
     header {
         flex-direction: column;
@@ -463,5 +469,10 @@ footer {
 @media screen and (max-width: 610px){
     .copyright{
         display: block;
+    }
+    #btnwhatsapp{
+        bottom: 10px;
+        right: 5px;
+        width:60px;
     }
 }
