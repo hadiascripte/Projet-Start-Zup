@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* /QUIS SUIS-JE ? */
 :root {
     --var1: #0a034a;
     --var2: #085a8c;
@@ -75,10 +76,11 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 60vh;
-    width: 100vw;
+    width: 100%;
     background-image: url(/Ressources/apropos.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     position: relative;
 }
@@ -102,7 +104,6 @@ h1 {
     padding: 20px 0;
 }
 .imgpropos img {
-  
 }
 .txtpropos {
     display: flex;
@@ -119,7 +120,7 @@ footer {
     align-items: baseline;
     padding: 5vw;
     background-color: var(--var6);
-    width: 100vw;
+    width: 100%;
 }
 .mentions,
 .infos {
@@ -177,6 +178,9 @@ footer {
     .liensnav {
         margin-top: 10px;
     }
+    h1 {
+        font-size: 5rem;
+    }
 
     footer {
         display: block;
@@ -218,7 +222,12 @@ footer {
     }
     .liensnav a {
     }
-
+    .mainpropos {
+        height: 50vh;
+    }
+    h1{
+        font-size: 4rem;
+    }
     footer {
         display: flex;
         flex-direction: column;
@@ -235,5 +244,15 @@ footer {
     .mentions,
     .copyright {
         text-align: center;
+    }
+}
+@media screen and (max-width: 610px){
+    .copyright{
+        display: block;
+    }
+}
+@media screen and (max-width: 610px){
+    .copyright{
+        display: block;
     }
 }

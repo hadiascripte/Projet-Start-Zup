@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: solid red; */
 }
 :root {
     --var1: #0a034a;
@@ -46,6 +47,7 @@ footer {
 .mecontactertop a {
     text-decoration: none;
     color: var(--var1);
+    width: 100vw;
 }
 h1 {
     font-size: 1.3rem;
@@ -53,6 +55,8 @@ h1 {
 
 p {
     font-family: pangolin;
+    letter-spacing: 1px;
+    font-weight: 100;
     line-height: 28px;
 }
 h3 {
@@ -61,6 +65,7 @@ h3 {
     /* padding: 5vw 0; */
     font-weight: 100;
     font-family: indie;
+    letter-spacing: 2px;
     font-size: 2rem;
 }
 h4 {
@@ -70,6 +75,7 @@ h4 {
 h5 {
     font-size: 1.3rem;
     font-family: indie;
+    letter-spacing: 2px;
     color: var(--var3);
 }
 
@@ -80,16 +86,21 @@ h6 {
 
 li {
     list-style: none;
+    font-size: 1.5rem;
+    font-family:Mystery Quest; ;
+    font-weight: 0;
 }
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1vw;
+    margin: auto;
+    width: 90vw;
 }
 .liensnav a {
     text-decoration: none;
     font-family: walter-turncoat;
+    letter-spacing: 2px;
     margin: 10px;
     font-size: 1.2rem;
     padding: 1vw 2vw;
@@ -98,24 +109,26 @@ header {
 .liensnav a:hover {
     color: var(--var4);
     border-bottom: solid var(--var4);
-    letter-spacing: 1px;
+    letter-spacing: 4px;
 }
+/* main */
+/* titre background image */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
-
-/* main */
-/* titre background image */
 .titletop {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 60vh;
-    background-image: url(/Ressources/banniere1.png);
+    background-image: url(/Ressources/banniere1.png) ;
     background-repeat: no-repeat;
-    background-position: center;
+    background-attachment: fixed;
+    background-position: top;
     background-size: cover;
     position: relative;
 }
@@ -137,6 +150,7 @@ main {
 }
 /* L'occasion d'un thème plus texte */
 .presentation {
+    width: 100%;
     text-align: center;
     background-color: var(--var5);
 }
@@ -149,13 +163,13 @@ main {
 /* Mes service */
 .servicetitle {
     background-color: var(--var2);
-    width: 100vw;
+    width: 100%;
 }
 
 .services {
     display: flex;
     padding: 0 7vw;
-    width: 100vw;
+    width: 100%;
 }
 
 .services img {
@@ -184,11 +198,11 @@ main {
 /* Comment réserver une journée */
 .mecontactertop {
     background-color: var(--var3);
-    width: 100vw;
+    width: 100%;
 }
 .mecontacterbottom {
     text-align: center;
-    width: 100vw;
+    width: 100%;
 }
 .mecontactertop h3 {
     color: var(--var5);
@@ -204,57 +218,98 @@ main {
     font-size: 1.6rem;
     color: var(--var2);
     background-color: var(--var5);
-    padding: 1vw 3vw;
-    border-radius: 40px;
+    padding: 2vw 4vw;
+    border-radius: 20px;
 }
+/* form */
 
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40vw;
+    width: 70%;
     margin: 3vw 0;
     background-color: var(--var2);
-    border-radius: 30px;
+    border-radius: 20px;
     color: var(--var5);
+}
+.formtop {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    padding: 3vw;
+    width: 100%;
+}
+.formtopleft,
+.formtopright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+.formmiddle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.formbottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formbottom input {
+    height: 3vh;
 }
 label {
     font-family: schoolbell;
+   
+    letter-spacing: 2px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: 1vw 0;
     padding: 0 4vw;
 }
 input {
-    width: 25vw;
-    height: 5vh;
+    width: 80%;
+    height: 7vh;
     margin-bottom: 2vw;
     text-align: center;
     border-radius: 20px;
 }
 textarea {
-    width: 30vw;
+    width: 70%;
     margin-bottom: 15px;
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
 }
-
+.btn input {
+    background-color: var(--var5);
+    font-family: pangolin;
+    width: 200px;
+    transition: 0.3s;
+}
+.btn input:hover {
+    cursor: pointer;
+    letter-spacing: 2px;
+    transform: scale(1.1);
+}
 /* footer */
 footer {
     display: flex;
     justify-content: center;
     align-items: baseline;
     padding: 5vw;
-    margin-top: 3vw;
     background-color: var(--var6);
-    width: 100vw;
+    width: 100%;
 }
 .mentions,
 .infos {
     display: flex;
     flex-direction: column;
-    width: 33vw;
+    width: 33%;
     color: var(--var5);
 }
 .infos,
@@ -262,26 +317,33 @@ footer {
 .copyright .copyright p {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-family: indie;
     font-size: 1rem;
 }
-.mentions a,.infos a {
+.mentions a,
+.infos a {
     color: var(--var3);
     font-family: pangolin;
-    /* display: inline-block; */
     margin: 5px 0;
     text-decoration: none;
 }
-.mentions a:hover, .infos a:hover {
+.mentions a:hover,
+.infos a:hover {
     text-decoration: none;
     color: var(--var4);
     letter-spacing: 1px;
 }
 footer {
     color: var(--var2);
+    align-items: center;
+    font-family: pangolin;
 }
-.copyright p {
+.copyright p,
+.infos p {
     color: var(--var5);
+    margin: 5px 0;
+    font-family: pangolin;
 }
 
 @media screen and (max-width: 850px) {
@@ -299,6 +361,10 @@ footer {
     .liensnav {
         margin-top: 10px;
     }
+   
+    form {
+        width: 70%;
+    }
     footer {
         display: block;
     }
@@ -308,9 +374,8 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        width: 100vw;
         padding: 1vw;
-        width: 80vw;
+        width: 80%;
     }
     .mentions,
     .infos {
@@ -329,7 +394,6 @@ footer {
 }
 @media screen and (max-width: 710px) {
     header {
-        /* flex-direction: row; */
         display: none;
     }
     .liensnav {
@@ -340,6 +404,10 @@ footer {
     .liensnav a {
         text-align: center;
     }
+    .titletop{
+        height: 50vh;
+        background-position: center;
+    }
     .titletop h2 {
         font-size: 4rem;
     }
@@ -347,7 +415,6 @@ footer {
         flex-direction: column;
         align-items: center;
 
-        /* align-items: center; */
     }
     .boxbottom {
         flex-direction: column-reverse;
@@ -360,17 +427,20 @@ footer {
 
     .boxtop,
     .boxbottom {
-        width: 70vw;
+        width: 70%;
     }
     form {
-        width: 60vw;
+        width: 70%;
     }
     label {
         font-family: schoolbell;
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin: 1vw 0;
-        padding: 0 4vw;
+        padding: 0 3vw;
+    }
+    input{
+        width: 100%;
     }
     footer {
         display: flex;
@@ -388,5 +458,10 @@ footer {
     .mentions,
     .copyright {
         text-align: center;
+    }
+}
+@media screen and (max-width: 610px){
+    .copyright{
+        display: block;
     }
 }
