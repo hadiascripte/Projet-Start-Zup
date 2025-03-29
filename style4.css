@@ -34,7 +34,9 @@
 body {
     color: var(--var1);
 }
-
+.logo {
+    display: none;
+}
 header {
     display: flex;
     justify-content: center;
@@ -55,16 +57,71 @@ header {
     border-bottom: solid var(--var4);
 }
 h1 {
-    font-size: 1.3rem;
     text-align: center;
     font-family: Mystery Quest;
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-weight: 100;
     margin: 5vw;
-    color: var(--var5);
+    color: var(--var6);
     z-index: 1;
 }
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.maintop {
+    text-align: center;
+    padding-top: 40px;
+}
+h3,
+h4,
+h5,
+p {
+    margin: 15px 0;
+}
 
+h3 {
+    text-align: center;
+    color: var(--var6);
+    /* padding: 5vw 0; */
+    font-weight: 600;
+    font-family: indie;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+h4 {
+    font-family: indie;
+    font-size: 1.6rem;
+    margin-bottom: 2vw;
+    color: var(--var3);
+}
+h5 {
+    font-size: 1.3rem;
+    font-family: indie;
+    letter-spacing: 2px;
+    color: var(--var1);
+}
+p {
+    font-family: pangolin;
+    letter-spacing: 1px;
+    font-weight: 100;
+    line-height: 28px;
+}
+li {
+    font-family: pangolin;
+    color: var(--var2);
+    margin: 15px 0;
+}
+a {
+    color: var(--var4);
+}
+.maintxt {
+    align-items: center;
+    width: 70%;
+    text-align: center;
+}
+/* ---------------------------------------------- */
 footer {
     display: flex;
     justify-content: center;
