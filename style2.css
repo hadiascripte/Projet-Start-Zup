@@ -55,7 +55,6 @@ header {
 .liensnav a:hover {
     color: var(--var4);
     border-bottom: solid var(--var4);
-    letter-spacing: 1px;
 }
 
 main {

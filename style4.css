@@ -53,13 +53,12 @@ header {
 .liensnav a:hover {
     color: var(--var4);
     border-bottom: solid var(--var4);
-    letter-spacing: 1px;
 }
 h1 {
     font-size: 1.3rem;
     text-align: center;
     font-family: Mystery Quest;
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 100;
     margin: 5vw;
     color: var(--var5);
