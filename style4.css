@@ -42,6 +42,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 1vw;
+    height: 15vh;
 }
 
 .liensnav a {
