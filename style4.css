@@ -233,8 +233,8 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    .liensnav a {
-    }
+    /* .liensnav a {
+    } */
     .mainpropos {
         height: 50vh;
     }
