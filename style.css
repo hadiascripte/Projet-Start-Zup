@@ -322,7 +322,7 @@ footer {
 }
 .mentions a,
 .infos a {
-    color: var(--var3);
+    color: var(--var1);
     font-family: pangolin;
     margin: 5px 0;
     text-decoration: none;

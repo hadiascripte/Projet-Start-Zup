@@ -60,7 +60,7 @@ header {
 h1 {
     text-align: center;
     font-family: Mystery Quest;
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 100;
     margin: 5vw;
     color: var(--var6);
@@ -149,7 +149,7 @@ footer {
 }
 .mentions a,
 .infos a {
-    color: var(--var3);
+    color: var(--var1);
     font-family: pangolin;
     margin: 5px 0;
     text-decoration: none;
@@ -193,6 +193,9 @@ footer {
     }
     .liensnav {
         margin-top: 10px;
+    }
+    h1 {
+        font-size: 3.5rem;
     }
 
     footer {
@@ -239,7 +242,7 @@ footer {
         height: 50vh;
     }
     h1 {
-        font-size: 4rem;
+        font-size: 3.2rem;
     }
     footer {
         display: flex;
